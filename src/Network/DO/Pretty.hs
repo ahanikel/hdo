@@ -7,6 +7,7 @@ import           Control.Monad.IO.Class (MonadIO (..))
 import           Data.IP                (IP)
 import           Network.DO.Types
 import           Text.PrettyPrint
+import           Prelude                hiding ((<>))
 
 class (Show a) => Pretty a where
   pretty :: a -> Doc
